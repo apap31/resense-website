@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resense | Atığa Yeniden Anlam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; }
+    a { text-decoration:none; color:inherit; }
+
+    header { background:#fff; padding:50px 20px; text-align:center; box-shadow:0 2px 12px rgba(0,0,0,0.1); }
+    header img { width:180px; }
+    header h1 { font-size:2.5rem; margin:15px 0; color:#2c3e50; }
+    header p { font-size:1.2rem; color:#555; }
+    header button { margin-top:20px; padding:12px 30px; background:#4CAF50; color:#fff; border:none; border-radius:8px; cursor:pointer; font-size:1rem; }
+
+    main { padding:50px 20px; max-width:1100px; margin:auto; }
+    section { margin-bottom:60px; }
+    section h2 { font-size:2rem; text-align:center; margin-bottom:30px; color:#2c3e50; }
+    section p { text-align:center; font-size:1.1rem; color:#555; max-width:800px; margin:auto; }
+
+    .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); width:250px; text-align:center; transition:transform 0.3s; }
+    .card:hover { transform:translateY(-5px); }
+    .card h3 { margin-bottom:10px; color:#4CAF50; }
+    .card p { color:#555; font-size:0.95rem; }
+
+    form { max-width:600px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+    input, textarea { padding:12px; border-radius:8px; border:1px solid #ccc; font-size:1rem; }
+    button.submit { padding:12px 20px; background:#4CAF50; color:#fff; border:none; border-radius:8px; cursor:pointer; font-size:1rem; }
+
+    footer { background:#2c3e50; color:#fff; text-align:center; padding:25px; }
+    footer a { color:#4CAF50; }
+
+    @media(max-width:768px){ .projects { flex-direction:column; align-items:center; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="resense_logo.png" alt="Resense Logo">
+    <h1>Atığa Yeniden Anlam</h1>
+    <p>Eski elektronikleri akıllı ürünlere dönüştürüyoruz.</p>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">Projeleri Gör</button>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Hakkımızda</h2>
+      <p>Resense, eski elektronikleri geri dönüştürerek, sürdürülebilir ve akıllı ürünler üretir. Misyonumuz teknoloji ve çevreyi birleştirmek, her atığa yeni bir değer kazandırmaktır.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projelerimiz</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Akıllı Sensör</h3>
+          <p>Eski mouselerden üretilmiş yağmur sensörü.</p>
+        </div>
+        <div class="card">
+          <h3>Geri Dönüşümlü LED</h3>
+          <p>Elektronik atıklardan LED ışıklar.</p>
+        </div>
+        <div class="card">
+          <h3>Akıllı Cihaz</h3>
+          <p>Eski devrelerden modüler elektronik cihazlar.</p>
+        </div>
+        <div class="card">
+          <h3>Enerji İzleyici</h3>
+          <p>Atık parçalarla enerji tüketimini ölçen cihaz.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>İletişim</h2>
+      <form>
+        <input type="text" placeholder="Adınız" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mesajınız" required rows="5"></textarea>
+        <button type="submit" class="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Resense | <a href="mailto:info@resense.com">info@resense.com</a></p>
+  </footer>
+
+</body>
+</html>
